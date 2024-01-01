@@ -18,7 +18,7 @@ This task involves creating a game agent selection screen where users can choose
   - A maximum of 10 games can be played. After that, show a "Limit Reached" screen.
   - Starting from the 5th game (and applicable in the 6th, 7th, and subsequent games), the selection of agents must adhere to the following conditions:
     - If you have chosen four different agents in the last four games, you must select one of these four agents for your current game.
-    - This rule ensures that in every game from the 5th onwards, the choice of agent is influenced by the selections made in the preceding four games.
+    - This rule ensures that in every game from the 5th onwards, the choice of agent is influenced by the selections made in the preceding four games (only if you have selected 4 different agents in the last 4 games).
 - The user interface must clearly distinguish between selectable and non-selectable agents.
 - Show a history of selected agents based on the frequency of selection on the home screen.
 
