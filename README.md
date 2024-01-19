@@ -35,7 +35,8 @@ Create a game using React.js and Node.js, integrating with the Valorant API and 
 
 4. **Data Management:**
 
-   - Store selection history in a backend database.
+   - Store selection history in the backend database [choose either MySQL, PostgreSQL or MongoDB].
+   - You can use free DB hosting services like [Neon](https://neon.tech/), [PlanetScale](https://planetscale.com/), [MongoDB](https://www.mongodb.com/).
    - Use the useContext hook in React for state management.
 
 5. **Additional Requirements:**
