@@ -1,45 +1,56 @@
-# Game Agent Selection Screen Task
+# Game Development Task
 
-## Overview
+## Objective
 
-This task involves creating a game agent selection screen where users can choose from a list of agents and start a game. The application will have specific rules (mentioned in task description) and state management requirements (using useContext only).
+Create a game using React.js and Node.js, integrating with the Valorant API and DB.
 
-## Task Description
+## Task Requirements
 
-- Develop a game agent select screen using React.js.
-- Fetch the list of agents from the Valorant API (https://valorant-api.com/v1/agents) through a Node.js back-end.
-- The back-end should filter and send only the necessary fields to the front-end.
-- Add a "Start Game" button on the home screen to navigate to the select agent screen.
-- Implement functionality to select an agent and start the game.
-- Display a "Game Started" screen upon selection.
-- Implement specific rules for agent selection:
-  - An agent cannot be selected in consecutive games.
-  - An agent can be selected a maximum of 3 times.
-  - A maximum of 10 games can be played. After that, show a "Limit Reached" screen.
-  - Starting from the 5th game (and applicable in the 6th, 7th, and subsequent games), the selection of agents must adhere to the following conditions:
-    - If you have chosen four different agents in the last four games, you must select one of these four agents for your current game.
-    - This rule ensures that in every game from the 5th onwards, the choice of agent is influenced by the selections made in the preceding four games (only if you have selected 4 different agents in the last 4 games).
-- The user interface must clearly distinguish between selectable and non-selectable agents.
-- Show a history of selected agents based on the frequency of selection on the home screen.
+1. **Back-End Development (Node.js):**
 
-## Ground Rules
+   - Fetch agent data from Valorant API (https://valorant-api.com/v1/agents).
+   - Filter and group agents by role, sending only essential data to the front-end.
 
-- Manage the state of selected agents using the useContext hook in React.
-- The solution should be coded in JavaScript/TypeScript. Styling should be done in CSS or SCSS. Your choice.
-- Put the code on your GitHub account in a private repo.
-- **All Valorant API calls must be performed on the backend side using Node.js.**
-- You can add extra features or improvements. There will be bonus points for it.
-- You can use other external libraries to speed up your work.
-- You can use a styling framework (Material UI, Bootstrap, Tailwind, or other) for quick and consistent styling.
-- If you're not able to implement all parts of the task, partial submissions are welcome.
-- Provide the GitHub repository URL as a PRIVATE Git repository (also provide access) to prithvi@smartdino.tech and cc arun@smartdino.tech, hello@pankajyadav.dev
-- The code should be properly organized and follow best practices for maintainability and scalability.
-- Include a README with setup and run instructions.
+2. **Front-End Development (React.js):**
 
-## Evaluation rules
+   - Implement a "Start Game" button on the home screen.
+   - Develop a selection screen with these features:
+     - Display a list of roles; selecting a role should filter agents accordingly.
+     - Include an option to clear filters and show all agents.
+     - Allow users to select an agent and lock in their choice with a "Lock In" button.
+     - On clicking "Lock In", display a "Game Started" screen with the selected agent.
+     - Distinguish between selectable and non-selectable agents visually.
+     - Example screen layout: [SAMPLE SCREEN](https://mir-s3-cdn-cf.behance.net/project_modules/1400/94fe9596477133.5eaf7e1c3a48e.png)
+   - "Game Started" screen:
+     - Display the selected agent and a button to return to the home screen.
+   - Home Screen Features:
+     - Show history of selected agents in a table with agent icon and game start time.
 
-- Code Quality: Clean, well-organized, maintainable code.
-- UI: Attention to detail matters.
-- Check full details about Evaluation criteria here [marks.md](MARKS.md)
+3. **Agent Selection Rules:**
 
-### Good luck!
+   - No consecutive game selection for the same agent.
+   - Limit agent selection to 3 times.
+   - Maximum of 10 games per user.
+   - For the 5th game and onwards, if four different agents were chosen in the last four games, one of them must be selected for the current game.
+
+4. **Data Management:**
+
+   - Store selection history in a backend database.
+   - Use the useContext hook in React for state management.
+
+5. **Additional Requirements:**
+   - Code in JavaScript/TypeScript, style in CSS/SCSS.
+   - Organize the code in a private GitHub repository. Grant access to prithvi@smartdino.tech, cc arun@smartdino.tech, hello@pankajyadav.dev
+   - Incorporate a README with setup and run instructions.
+   - Valorant API calls should be exclusively backend-based.
+   - Use of external libraries and styling frameworks (e.g., Material UI, Bootstrap, Tailwind) is allowed.
+
+## Submission
+
+Provide the GitHub repository URL as a PRIVATE Git repository and grant access to the specified emails.
+
+## Evaluation
+
+Evaluation will be based on code quality, user interface design, and adherence to the task requirements. For detailed evaluation criteria, refer to [marks.md](MARKS.md).
+
+### Best of luck!
