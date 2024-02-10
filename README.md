@@ -41,7 +41,7 @@ Create a game using React.js and Node.js, integrating with the Valorant API and 
 
 5. **Additional Requirements:**
    - Code in JavaScript/TypeScript, style in CSS/SCSS.
-   - Organize the code in a private GitHub repository. Grant access to prithvi@smartdino.tech, cc arun@smartdino.tech, hello@pankajyadav.dev
+   - Organize the code in a private GitHub repository. Grant access to prithvi@smartdino.tech, cc roshan@smartdino.tech, hello@pankajyadav.dev
    - Incorporate a README with setup and run instructions.
    - Valorant API calls should be exclusively backend-based.
    - Use of external libraries and styling frameworks (e.g., Material UI, Bootstrap, Tailwind) is allowed.
