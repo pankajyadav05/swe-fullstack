@@ -6,7 +6,7 @@ Create a simplified agent selection game using React.js, integrating with the Va
 
 ## Task Requirements (45 Minutes)
 
-### **Front-End Development (React.js Only):**
+### **Front-End Development:**
 
 1. **Home Screen:**
 
@@ -22,16 +22,12 @@ Create a simplified agent selection game using React.js, integrating with the Va
      - Role badge
    - Include a role filter dropdown (Duelist, Controller, Initiator, Sentinel, All)
    - Allow user to select an agent and click "Lock In"
+   - OnClick, Add selected agent to history. Next redirect user to **Home Screen.**
    - Show visual distinction for selectable vs non-selectable agents
 
-3. **Game Started Screen:**
-   - Display selected agent details (name, portrait, role)
-   - Show "Back to Home" button
-   - Add selected agent to history
+### **Rules:**
 
-### **Simplified Rules:**
-
-- **Only 1 rule**: Cannot select the same agent consecutively (if last game was Agent X, Agent X should be disabled)
+- Cannot select the same agent consecutively (if last game was Agent X, Agent X should be disabled)
 - Maximum 5 games total (after 5 games, show "Game limit reached" message)
 
 ### **Technical Requirements:**
@@ -60,7 +56,7 @@ Create a simplified agent selection game using React.js, integrating with the Va
 3. **API Integration:**
 
    - Make direct API calls from React components
-   - Handle loading states
+   - Basic loading states
    - Basic error handling
 
 4. **Styling:**
@@ -89,32 +85,6 @@ Create a simplified agent selection game using React.js, integrating with the Va
    - Proper component structure
    - Basic error handling
 
-## **Evaluation Focus:**
-
-1. **Functionality (40 points):**
-
-   - API integration works
-   - Agent selection and filtering
-   - Navigation between screens
-   - Rule enforcement (consecutive agent prevention)
-
-2. **Code Quality (30 points):**
-
-   - Component organization
-   - State management approach
-   - Code readability
-
-3. **User Experience (20 points):**
-
-   - Intuitive interface
-   - Loading states
-   - Visual feedback
-
-4. **Problem Solving (10 points):**
-   - Approach to challenges
-   - Debugging skills
-   - Time management
-
 ## **Setup Instructions:**
 
 ```bash
@@ -128,20 +98,6 @@ npm start
 
 - **Agents Endpoint:** `https://valorant-api.com/v1/agents`
 - **Response includes:** uuid, displayName, displayIcon, role.displayName
-
-## **Time Management Suggestions:**
-
-- **0-10 min:** Project setup, API exploration, basic component structure
-- **10-25 min:** Agent fetching, display, and role filtering
-- **25-35 min:** Selection logic, rule enforcement, navigation
-- **35-45 min:** History storage, polish, testing
-
-## **Bonus (if time permits):**
-
-- Add loading spinners
-- Improve visual design
-- Add agent abilities display
-- Smooth transitions between screens
 
 ---
 
